@@ -10,7 +10,7 @@ def Bubble(s):
    print("Отсортированный массив:")
    print(s)
    return s
-n=int(10)
+n=int(input())
 f=[]
 for i in range(0,n):
       f.append(int(input()))
