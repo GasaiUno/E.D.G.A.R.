@@ -1,0 +1,16 @@
+def SimNum(Start,End): #Функция поиска простых чисел
+    print('Простые числа в промежутке [',Start,';',End,']:')
+    for i in range(Start,End+1):
+        if i==1:
+            continue
+        for j in range(2,i):
+            if (i%j==0):
+                break
+        else:
+            print(i)
+print('Введите число с которого начать поиск простых чисел')
+Start=int(input())
+print('Введите число на котором закончить')
+End=int(input())
+SimNum(Start,End)
+
