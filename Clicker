@@ -1,0 +1,15 @@
+from tkinter import *
+i=0
+root=Tk()
+btn={}
+def Click():
+    global i
+    i=i+1
+    btn['text']=i
+btn=Button(root,
+           text=i,
+           width=30, height=5,
+           bg='white',fg='black',
+           command=Click())
+btn.pack()
+root.mainloop()
