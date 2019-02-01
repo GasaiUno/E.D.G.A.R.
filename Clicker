@@ -10,6 +10,6 @@ btn=Button(root,
            text=i,
            width=30, height=5,
            bg='white',fg='black',
-           command=Click())
+           command=Click)
 btn.pack()
 root.mainloop()
