@@ -2,7 +2,7 @@ from tkinter import *
 alphabet=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z',]
 root=Tk()
 s2=0
-def Cifer():
+def Cipher():
     global s2
     s2=list(ent.get())
     for i in range(0,len(s2)):
@@ -21,7 +21,7 @@ def Cifer():
                else:
                    b+=1
           ext2['text']='Ответ:',s2
-def Decifer():
+def Decipher():
     global s2
     s2=list(ent.get())
     for i in range(0,len(s2)):
@@ -43,8 +43,8 @@ def Decifer():
 ext=Label(text="Введите слово для шифрования/дешифрования")
 ent=Entry()
 ext2=Label(text=s2)
-btn1=Button(text='Зашифровать!',command=Cifer)
-btn2=Button(text='Расщифровать!',command=Decifer)
+btn1=Button(text='Зашифровать!',command=Cipher)
+btn2=Button(text='Расщифровать!',command=Decipher)
 ext.pack()
 ent.pack()
 ext2.pack()
