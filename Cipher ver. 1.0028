@@ -27,8 +27,8 @@ def Decipher():
                if s2[i]=='a':
                    s2[i]='z'
                    break
-               if alphabet[b]==s2[i]:
-                    s2[i]=alphabet[b-1]
+               if chr(b)==s2[i]:
+                    s2[i]=chr(b-1)
                     break                         
     ext2['text']='Ответ:',s2
 ext=Label(text="Введите слово для шифрования/дешифрования")
