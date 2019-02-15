@@ -1,0 +1,27 @@
+import math
+n=int(input())
+k=int(input())
+x=int(input())
+l=[]
+g=0
+res=0
+f=x/(n-k)
+f=math.ceil(f)
+if n-k==1:
+    print(n*x)
+    exit()
+for i in range(0,n):
+    l.append(f)
+    print(l[i])
+for i in range(0,n-k):
+    l[i]=l[i]-1
+    for i in range(0,n-k):
+        g=g+l[i]
+    if g==x:
+        break
+    if g<x:
+        l[i]=l[i]+1
+        break
+for i in range(0,n):
+    res=res+l[i]
+print(res)
